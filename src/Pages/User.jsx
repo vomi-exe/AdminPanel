@@ -5,7 +5,7 @@ import PermIdentityIcon from '@material-ui/icons/PermIdentity';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import PhotoCamera from '@material-ui/icons/PhotoCamera';
-
+import { Link } from "react-router-dom";
 
 
 const User = () => {
@@ -13,7 +13,9 @@ const User = () => {
         <div className="user">
             <div className="userTitleContainer">
                 <h1 className="userTitle">Edit User</h1>
-                <Button className="userAddButton" variant="outlined" color="secondary" >Create</Button>
+                <Link className="link" to="/newuser">
+                    <Button className="userAddButton" variant="outlined" color="secondary" >Create</Button>
+                </Link>
             </div>
             <div className="userInfo">
                 <div className="userInfoLeft">
