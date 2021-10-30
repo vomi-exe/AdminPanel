@@ -6,6 +6,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import { rows } from "../dummydata.js";
 import { Link } from "react-router-dom";
 
+
 const UserList = () => {
 
     const [data, setData] = useState(rows);

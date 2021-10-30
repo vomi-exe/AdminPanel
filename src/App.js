@@ -4,6 +4,7 @@ import Home from "./Pages/Home";
 import "./app.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import UserList from "./Pages/UserList";
+import User from "./Pages/User";
 
 function App() {
   return (
@@ -15,8 +16,11 @@ function App() {
           <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/users">
+          <Route path="/users" exact>
             <UserList />
+          </Route>
+          <Route path="/user/:userId">
+            <User />
           </Route>
         </Switch>
 
