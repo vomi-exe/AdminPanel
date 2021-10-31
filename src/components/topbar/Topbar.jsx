@@ -6,6 +6,7 @@ import PublicIcon from '@material-ui/icons/Public';
 import LanguageIcon from '@material-ui/icons/Language';
 import SettingsApplicationsIcon from '@material-ui/icons/SettingsApplications';
 import SettingsIcon from '@material-ui/icons/Settings';
+import { Link } from "react-router-dom";
 
 import { useState } from 'react';
 
@@ -20,9 +21,11 @@ const Topbar = () => {
     return (
         <div className="topbar">
             <div className="topbarwrapper">
-                <div className="topLeft">
-                    <span className="logo">Admin</span>
-                </div>
+                <Link className="link" to="/">
+                    <div className="topLeft">
+                        <span className="logo">Admin</span>
+                    </div>
+                </Link>
                 <div className="topRight">
                     <div className="topbarIconContainer">
                         <span className="topIcon" onMouseEnter={() => setIsShown1(true)}

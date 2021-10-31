@@ -12,6 +12,7 @@ import DynamicFeedIcon from '@material-ui/icons/DynamicFeed';
 import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
 import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
 import ReportIcon from '@material-ui/icons/Report';
+import { Link } from "react-router-dom"
 
 const Sidebar = () => {
     return (
@@ -20,10 +21,12 @@ const Sidebar = () => {
                 <div className="sidebarMenu">
                     <h2 className="sidebarTitle">Dashboard</h2>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem active">
-                            <LineStyleIcon className="sidebarIcon" />
-                            Home
-                        </li>
+                        <Link className="link" to="/">
+                            <li className="sidebarListItem active">
+                                <LineStyleIcon className="sidebarIcon" />
+                                Home
+                            </li>
+                        </Link>
                         <li className="sidebarListItem">
                             <TimelineIcon className="sidebarIcon" />
                             Analytics
@@ -37,14 +40,18 @@ const Sidebar = () => {
                 <div className="sidebarMenu">
                     <h2 className="sidebarTitle">Quick Menu</h2>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem">
-                            <AccountCircleIcon className="sidebarIcon" />
-                            Users
-                        </li>
-                        <li className="sidebarListItem">
-                            <StoreIcon className="sidebarIcon" />
-                            Products
-                        </li>
+                        <Link className="link" to="/users">
+                            <li className="sidebarListItem">
+                                <AccountCircleIcon className="sidebarIcon" />
+                                Users
+                            </li>
+                        </Link >
+                        <Link className="link" to="products">
+                            <li className="sidebarListItem">
+                                <StoreIcon className="sidebarIcon" />
+                                Products
+                            </li>
+                        </Link>
                         <li className="sidebarListItem">
                             <ReceiptIcon className="sidebarIcon" />
                             Transcripts
