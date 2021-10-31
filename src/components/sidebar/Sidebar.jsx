@@ -12,7 +12,7 @@ import DynamicFeedIcon from '@material-ui/icons/DynamicFeed';
 import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
 import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
 import ReportIcon from '@material-ui/icons/Report';
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 const Sidebar = () => {
     return (
@@ -21,79 +21,102 @@ const Sidebar = () => {
                 <div className="sidebarMenu">
                     <h2 className="sidebarTitle">Dashboard</h2>
                     <ul className="sidebarList">
-                        <Link className="link" to="/">
-                            <li className="sidebarListItem active">
+                        <NavLink className="sidebarListItem link" exact to="/"
+                            activeClassName="active"
+                        >
+                            <li className="listItemSidebar">
                                 <LineStyleIcon className="sidebarIcon" />
                                 Home
                             </li>
-                        </Link>
-                        <li className="sidebarListItem">
-                            <TimelineIcon className="sidebarIcon" />
-                            Analytics
-                        </li>
-                        <li className="sidebarListItem">
-                            <TrendingUpIcon className="sidebarIcon" />
-                            Sales
-                        </li>
+                        </NavLink>
+                        <NavLink className="sidebarListItem link" to="/analytics" >
+                            <li className="listItemSidebar">
+                                <TimelineIcon className="sidebarIcon" />
+                                Analytics
+                            </li>
+                        </NavLink>
+                        <NavLink className="sidebarListItem link" to="/Sales">
+                            <li className="listItemSidebar">
+                                <TrendingUpIcon className="sidebarIcon" />
+                                Sales
+                            </li>
+                        </NavLink>
                     </ul>
                 </div>
                 <div className="sidebarMenu">
                     <h2 className="sidebarTitle">Quick Menu</h2>
                     <ul className="sidebarList">
-                        <Link className="link" to="/users">
-                            <li className="sidebarListItem">
+                        <NavLink className="sidebarListItem link" activeClassName="active" to="/users">
+                            <li className="listItemSidebar">
                                 <AccountCircleIcon className="sidebarIcon" />
                                 Users
                             </li>
-                        </Link >
-                        <Link className="link" to="products">
-                            <li className="sidebarListItem">
+                        </NavLink >
+                        <NavLink className="sidebarListItem link" activeClassName="active" to="/products">
+                            <li className="listItemSidebar" >
                                 <StoreIcon className="sidebarIcon" />
                                 Products
                             </li>
-                        </Link>
-                        <li className="sidebarListItem">
-                            <ReceiptIcon className="sidebarIcon" />
-                            Transcripts
-                        </li>
-                        <li className="sidebarListItem">
-                            <AssessmentIcon className="sidebarIcon" />
-                            Assessment
-                        </li>
+                        </NavLink>
+                        <NavLink className="sidebarListItem link" to="/transcripts">
+                            <li className="listItemSidebar" >
+                                <ReceiptIcon className="sidebarIcon" />
+                                Transcripts
+                            </li>
+                        </NavLink>
+                        <NavLink className="sidebarListItem link" to="/assessment">
+                            <li className="listItemSidebar" >
+                                <AssessmentIcon className="sidebarIcon" />
+                                Assessment
+                            </li>
+                        </NavLink>
                     </ul>
                 </div>
                 <div className="sidebarMenu">
                     <h2 className="sidebarTitle">Notification</h2>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem">
-                            <MailOutlineIcon className="sidebarIcon" />
-                            Mails
-                        </li>
-                        <li className="sidebarListItem">
-                            <DynamicFeedIcon className="sidebarIcon" />
-                            Feedback
-                        </li>
-                        <li className="sidebarListItem">
-                            <QuestionAnswerIcon className="sidebarIcon" />
-                            Messages
-                        </li>
+                        <NavLink className="sidebarListItem link" to="/mails">
+                            <li className="listItemSidebar">
+                                <MailOutlineIcon className="sidebarIcon" />
+                                Mails
+                            </li>
+                        </NavLink>
+                        <NavLink className="sidebarListItem link" to="/feedback">
+                            <li className="listItemSidebar" >
+                                <DynamicFeedIcon className="sidebarIcon" />
+                                Feedback
+                            </li>
+                        </NavLink>
+
+                        <NavLink className="sidebarListItem link" to="/messages">
+                            <li className="listItemSidebar">
+                                <QuestionAnswerIcon className="sidebarIcon" />
+                                Messages
+                            </li>
+                        </NavLink>
                     </ul>
                 </div>
                 <div className="sidebarMenu">
                     <h2 className="sidebarTitle">Stuff</h2>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem ">
-                            <SupervisedUserCircleIcon className="sidebarIcon" />
-                            Manage
-                        </li>
-                        <li className="sidebarListItem">
-                            <TimelineIcon className="sidebarIcon" />
-                            Analytics
-                        </li>
-                        <li className="sidebarListItem">
-                            <ReportIcon className="sidebarIcon" />
-                            Reports
-                        </li>
+                        <NavLink className="sidebarListItem link" to="/manage">
+                            <li className="listItemSidebar">
+                                <SupervisedUserCircleIcon className="sidebarIcon" />
+                                Manage
+                            </li>
+                        </NavLink>
+                        <NavLink className="sidebarListItem link" to="/analyticsStuff">
+                            <li className="listItemSidebar">
+                                <TimelineIcon className="sidebarIcon" />
+                                Analytics
+                            </li>
+                        </NavLink>
+                        <NavLink className="sidebarListItem link" to="/reports">
+                            <li className="listItemSidebar">
+                                <ReportIcon className="sidebarIcon" />
+                                Reports
+                            </li>
+                        </NavLink>
                     </ul>
                 </div>
 

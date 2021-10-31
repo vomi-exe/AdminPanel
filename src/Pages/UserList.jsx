@@ -57,7 +57,7 @@ const UserList = () => {
                     <div className="userListBtn">
                         <Link
                             style={{ textDecoration: 'none' }}
-                            to={"/user/" + params.row.id}
+                            to={"/users/" + params.row.id}
                         >
                             <Button
                                 className="btnuserListEdit"

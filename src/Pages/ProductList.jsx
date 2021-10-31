@@ -54,8 +54,9 @@ const Productlist = () => {
                 return (
                     <div className="productListBtn">
                         <Link
+                            exact
                             style={{ textDecoration: 'none' }}
-                            to={"/product/" + params.row.id}
+                            to={"/products/" + params.row.id}
                         >
                             <Button
                                 className="btnproductListEdit"
