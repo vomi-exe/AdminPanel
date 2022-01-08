@@ -22,10 +22,10 @@ const WidgetSm = () => {
                 </li>
                 <li className="widgetSmListItem">
                     <img className="widgetSmImg"
-                        src="https://images.pexels.com/photos/8537298/pexels-photo-8537298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        src="./person/3.jpeg"
                         alt="Profile-Imge" />
                     <div className="widgetSmUser">
-                        <span className="widgetSmUsername">Anna Keller</span>
+                        <span className="widgetSmUsername">Lon Moore</span>
                         <span className="widgetSmUserTitle">Software Engineer</span>
 
                     </div>
@@ -36,10 +36,10 @@ const WidgetSm = () => {
                 </li>
                 <li className="widgetSmListItem">
                     <img className="widgetSmImg"
-                        src="https://images.pexels.com/photos/8537298/pexels-photo-8537298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        src="./person/11.jpeg"
                         alt="Profile-Imge" />
                     <div className="widgetSmUser">
-                        <span className="widgetSmUsername">Anna Keller</span>
+                        <span className="widgetSmUsername">Ben N. Syder</span>
                         <span className="widgetSmUserTitle">Software Engineer</span>
 
                     </div>
@@ -50,11 +50,11 @@ const WidgetSm = () => {
                 </li>
                 <li className="widgetSmListItem">
                     <img className="widgetSmImg"
-                        src="https://images.pexels.com/photos/8537298/pexels-photo-8537298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        src="./person/1.jpeg"
                         alt="Profile-Imge" />
                     <div className="widgetSmUser">
-                        <span className="widgetSmUsername">Anna Keller</span>
-                        <span className="widgetSmUserTitle">Software Engineer</span>
+                        <span className="widgetSmUsername">Stacy Rect</span>
+                        <span className="widgetSmUserTitle">Chiefwar Enginner</span>
 
                     </div>
                     <button className="widgetSmButton">
@@ -64,10 +64,10 @@ const WidgetSm = () => {
                 </li>
                 <li className="widgetSmListItem">
                     <img className="widgetSmImg"
-                        src="https://images.pexels.com/photos/8537298/pexels-photo-8537298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        src="./person/10.jpeg"
                         alt="Profile-Imge" />
                     <div className="widgetSmUser">
-                        <span className="widgetSmUsername">Anna Keller</span>
+                        <span className="widgetSmUsername">Andy Fel</span>
                         <span className="widgetSmUserTitle">Software Engineer</span>
 
                     </div>
