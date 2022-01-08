@@ -204,7 +204,7 @@ export const productRows = [
         id: 2,
         name: 'Avacados',
         img:
-            "./avacado.jpeg",
+            "./products/avacado.jpeg",
         stocks: 125,
         status: "active",
         price: "$50.00",
@@ -213,7 +213,7 @@ export const productRows = [
         id: 3,
         name: 'Cake',
         img:
-            "./cake.jpeg",
+            "./products/cake.jpeg",
         stocks: 12,
         status: "active",
         price: "$10.00",
@@ -222,7 +222,7 @@ export const productRows = [
         id: 4,
         name: 'Camera',
         img:
-            "./camera.jpeg",
+            "./products/camera.jpeg",
         stocks: 25,
         status: "active",
         price: "$550.00",
@@ -231,7 +231,7 @@ export const productRows = [
         id: 5,
         name: 'Cream',
         img:
-            "./cream.jpeg",
+            "./products/cream.jpeg",
         stocks: 266,
         status: "active",
         price: "$57.00",
@@ -240,7 +240,7 @@ export const productRows = [
         id: 6,
         name: 'IPhone',
         img:
-            "./iphone.jpeg",
+            "./products/iphone.jpeg",
         stocks: 75,
         status: "active",
         price: "$995.00",
@@ -249,7 +249,7 @@ export const productRows = [
         id: 7,
         name: 'Lemons(Nimbu)',
         img:
-            "./lemons.jpeg",
+            "./products/lemons.jpeg",
         stocks: 985,
         status: "active",
         price: "$3.00",
@@ -258,7 +258,7 @@ export const productRows = [
         id: 8,
         name: 'Milk',
         img:
-            "./milk.jpeg",
+            "./products/milk.jpeg",
         stocks: 253,
         status: "active",
         price: "$15.00",
@@ -267,7 +267,7 @@ export const productRows = [
         id: 9,
         name: 'Oranges',
         img:
-            "./orange.jpeg",
+            "./products/orange.jpeg",
         stocks: 97,
         status: "active",
         price: "$20.00",
@@ -276,7 +276,7 @@ export const productRows = [
         id: 10,
         name: 'Soda',
         img:
-            "./soda.jpeg",
+            "./products/soda.jpeg",
         stocks: 115,
         status: "active",
         price: "$2.00",
